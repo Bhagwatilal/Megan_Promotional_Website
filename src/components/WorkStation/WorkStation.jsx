@@ -22,7 +22,7 @@ export function WorkStation() {
             className={activeTab === 1 ? "active" : ""}
           >
             Megan Ai
-            <a target="_blank" img src="/Megan Ai.png" alt="Girl in a jacket" width="300" height="200">
+            <a target="_blank" href="https://megan-promotional-website.netlify.app/">
               <MdOutlineOpenInNew />
             </a>
           </button>
@@ -56,7 +56,7 @@ export function WorkStation() {
   const getIframeSource = () => {
     switch (activeTab) {
       case 1:
-        return "a target";
+        return "https://megan-promotional-website.netlify.app/";
 
     }
   };
