@@ -22,7 +22,7 @@ export function WorkStation() {
             className={activeTab === 1 ? "active" : ""}
           >
             Megan Ai
-            <a target="_blank" >
+            <a target="_blank" img src="/Megan Ai.png" alt="Girl in a jacket" width="300" height="200">
               <MdOutlineOpenInNew />
             </a>
           </button>
@@ -56,7 +56,7 @@ export function WorkStation() {
   const getIframeSource = () => {
     switch (activeTab) {
       case 1:
-        return "MEGAN AI";
+        return "a target";
 
     }
   };
