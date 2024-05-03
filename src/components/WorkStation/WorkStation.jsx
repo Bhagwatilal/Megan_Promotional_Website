@@ -56,7 +56,7 @@ export function WorkStation() {
   const getIframeSource = () => {
     switch (activeTab) {
       case 1:
-        return "https://megan-promotional-website.netlify.app/";
+        return "MEGAN AI";
 
     }
   };
