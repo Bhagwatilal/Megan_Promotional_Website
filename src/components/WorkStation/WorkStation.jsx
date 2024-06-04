@@ -30,6 +30,10 @@ export function WorkStation() {
             onClick={() => handleTabClick(2)}
             className={activeTab === 2 ? "active" : ""}
           >
+           Google
+            <a target="_blank" href="https://www.google.co.in/">
+              <MdOutlineOpenInNew />
+            </a>
           </button>
         </div>
         <iframe title={`project ${activeTab}`} src={getIframeSource()} />
