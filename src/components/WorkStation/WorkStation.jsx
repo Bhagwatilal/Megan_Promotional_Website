@@ -21,21 +21,22 @@ export function WorkStation() {
             onClick={() => handleTabClick(1)}
             className={activeTab === 1 ? "active" : ""}
           >
-Megan AI
-          <MdOutlineOpenInNew />
-        
-        <iframe
-          title="Megan AI"
-          src="https://megan-promotional-website.netlify.app/"
-        ></iframe>
-          
-           {/* Google
+            Megan Ai
+            <a target="_blank" href="https://megan-promotional-website.netlify.app/">
+              <MdOutlineOpenInNew />
+            </a>
+          </button>
+          <button
+            onClick={() => handleTabClick(2)}
+            className={activeTab === 2 ? "active" : ""}
+          >
+           Google
             <a target="_blank" href="https://www.google.co.in/">
               <MdOutlineOpenInNew />
-            </a> */}
+            </a>
           </button>
         </div>
-        {/* <iframe title={`project ${activeTab}`} src={getIframeSource()} /> */}
+        <iframe title={`project ${activeTab}`} src={getIframeSource()} />
       </Html>
     );
   };
