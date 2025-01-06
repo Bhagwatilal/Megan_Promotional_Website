@@ -22,7 +22,7 @@ export function WorkStation() {
             className={activeTab === 1 ? "active" : ""}
           >
             Megan Ai
-            <a target="_blank" href="https://megan-promotional-website.netlify.app/">
+            <a target="_self" href="https://megan-promotional-website.vercel.app/">
               <MdOutlineOpenInNew />
             </a>
           </button>
