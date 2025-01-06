@@ -27,17 +27,12 @@ Megan AI
         <iframe
           title="Megan AI"
           src="https://megan-promotional-website.netlify.app/"
-          style={{
-            width: "100%",
-            height: "100%",
-            border: "none",
-          }}
         ></iframe>
           
-           Google
+           {/* Google
             <a target="_blank" href="https://www.google.co.in/">
               <MdOutlineOpenInNew />
-            </a>
+            </a> */}
           </button>
         </div>
         <iframe title={`project ${activeTab}`} src={getIframeSource()} />
