@@ -35,7 +35,7 @@ Megan AI
             </a> */}
           </button>
         </div>
-        <iframe title={`project ${activeTab}`} src={getIframeSource()} />
+        {/* <iframe title={`project ${activeTab}`} src={getIframeSource()} /> */}
       </Html>
     );
   };
