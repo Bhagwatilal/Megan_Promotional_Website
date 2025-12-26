@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Html, useGLTF } from "@react-three/drei";
 import { MdOutlineOpenInNew } from "react-icons/md";
 import { editable as e } from "@theatre/r3f";
+import * as THREE from "three";
 
 export function WorkStation() {
   const [htmlVisible, setHtmlVisible] = useState(false);
@@ -42,12 +43,10 @@ export function WorkStation() {
   };
 
   // Import the 3D models for the table, chair, and laptop
-  const tableModel = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/table-wood/model.gltf"
-  );
-  const chairModel = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/bench-2/model.gltf"
-  );
+  // TODO: Add local table and chair models to public/models/ folder
+  // For now, using empty Three.js Group objects to prevent crash
+  const tableModel = { scene: new THREE.Group() };
+  const chairModel = { scene: new THREE.Group() };
   const { nodes, materials } = useGLTF("./models/laptop/laptop.glb");
 
   // Function to handle tab clicks and update the activeTab state
